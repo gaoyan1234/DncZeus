@@ -30,18 +30,18 @@ namespace DncZeus.Api.Entities
         /// </summary>
         [Required]
         [Key]
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Code { get; set; }
         /// <summary>
         /// 
         /// </summary>
         [Required]
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Name { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        [Column(TypeName = "nvarchar(max)")]
+        [Column(TypeName = "TEXT")]
         public string Description { get; set; }
         /// <summary>
         /// 

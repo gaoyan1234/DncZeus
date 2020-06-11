@@ -26,27 +26,27 @@ namespace DncZeus.Api.Entities
         /// 图标名称
         /// </summary>
         [Required]
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Code { get; set; }
         /// <summary>
         /// 图标的大小，单位是 px
         /// </summary>
-        [Column(TypeName = "nvarchar(20)")]
+        [Column(TypeName = "TEXT")]
         public string Size { get; set; }
         /// <summary>
         /// 图标颜色
         /// </summary>
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Color { get; set; }
         /// <summary>
         /// 自定义图标
         /// </summary>
-        [Column(TypeName = "nvarchar(60)")]
+        [Column(TypeName = "TEXT")]
         public string Custom { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        [Column(TypeName = "nvarchar(max)")]
+        [Column(TypeName = "TEXT")]
         public string Description { get; set; }
         /// <summary>
         /// 

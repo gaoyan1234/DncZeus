@@ -30,7 +30,7 @@ namespace DncZeus.Api.Entities
         /// </summary>
         [Required]
         [Key]
-        [Column(TypeName = "nvarchar(20)")]
+        [Column(TypeName = "TEXT")]
         public string Code { get; set; }
         /// <summary>
         /// 菜单GUID
@@ -40,13 +40,13 @@ namespace DncZeus.Api.Entities
         /// 权限名称
         /// </summary>
         [Required]
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Name { get; set; }
         /// <summary>
         /// 权限操作码
         /// </summary>
         [Required]
-        [Column(TypeName = "nvarchar(80)")]
+        [Column(TypeName = "TEXT")]
         public string ActionCode { get; set; }
         /// <summary>
         /// 图标(可选)
@@ -55,7 +55,7 @@ namespace DncZeus.Api.Entities
         /// <summary>
         /// 描述信息
         /// </summary>
-        [Column(TypeName = "nvarchar(max)")]
+        [Column(TypeName = "TEXT")]
         public string Description { get; set; }
         /// <summary>
         /// 状态

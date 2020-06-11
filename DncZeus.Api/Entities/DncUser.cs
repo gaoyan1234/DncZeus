@@ -25,13 +25,13 @@ namespace DncZeus.Api.Entities
         [DefaultValue("newid()")]
         public Guid Guid { get; set; }
         [Required]
-        [Column(TypeName = "nvarchar(50)",Order =10)]
+        [Column(TypeName = "TEXT")]
         public string LoginName { get; set; }
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string DisplayName { get; set; }
-        [Column(TypeName = "nvarchar(255)")]
+        [Column(TypeName = "TEXT")]
         public string Password { get; set; }
-        [Column(TypeName = "nvarchar(255)",Order = 100)]
+        [Column(TypeName = "TEXT")]
         public string Avatar { get; set; }
         public UserType UserType { get; set; }
         public IsLocked IsLocked { get; set; }
@@ -65,7 +65,7 @@ namespace DncZeus.Api.Entities
         /// <summary>
         /// 用户描述信息
         /// </summary>
-        [Column(TypeName = "nvarchar(800)")]
+        [Column(TypeName = "TEXT")]
         public string Description { get; set; }
         /// <summary>
         /// 用户的角色集合

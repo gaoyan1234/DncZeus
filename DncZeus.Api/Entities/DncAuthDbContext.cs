@@ -21,7 +21,7 @@ namespace DncZeus.Api.Entities
         /// <param name="options"></param>
         public DncZeusDbContext(DbContextOptions<DncZeusDbContext> options) : base(options)
         {
-
+            this.Database.EnsureCreated();
         }
         /// <summary>
         /// 用户

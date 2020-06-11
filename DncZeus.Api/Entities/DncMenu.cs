@@ -29,22 +29,22 @@ namespace DncZeus.Api.Entities
         /// <summary>
         /// 菜单名称
         /// </summary>
-        [Required,Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string Name { get; set; }
         /// <summary>
         /// 链接地址
         /// </summary>
-        [Column(TypeName = "nvarchar(255)")]
+        [Column(TypeName = "TEXT")]
         public string Url { get; set; }
         /// <summary>
         /// 页面别名
         /// </summary>
-        [Column(TypeName = "nvarchar(255)")]
+        [Column(TypeName = "TEXT")]
         public string Alias { get; set; }
         /// <summary>
         /// 菜单图标(可选)
         /// </summary>
-        [Column(TypeName = "nvarchar(128)")]
+        [Column(TypeName = "TEXT")]
         public string Icon { get; set; }
         /// <summary>
         /// 父级GUID
@@ -61,7 +61,7 @@ namespace DncZeus.Api.Entities
         /// <summary>
         /// 描述信息
         /// </summary>
-        [Column(TypeName = "nvarchar(800)")]
+        [Column(TypeName = "TEXT")]
         public string Description { get; set; }
         /// <summary>
         /// 排序

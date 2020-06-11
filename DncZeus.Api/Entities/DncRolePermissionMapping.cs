@@ -20,12 +20,12 @@ namespace DncZeus.Api.Entities
         /// 角色编码
         /// </summary>
         [Required]
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "TEXT")]
         public string RoleCode { get; set; }
         /// <summary>
         /// 权限编码
         /// </summary>
-        [Column(TypeName = "nvarchar(20)")]
+        [Column(TypeName = "TEXT")]
         public string PermissionCode { get; set; }
 
         /// <summary>
