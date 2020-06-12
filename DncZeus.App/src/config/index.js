@@ -17,13 +17,13 @@ export default {
    * @description api请求基础路径
    */
   baseUrl: {
-    dev: 'http://localhost:54321/',
-    pro: 'http://localhost:54321/',
+    dev: 'https://jintianasia.azurewebsites.net/',
+    pro: 'https://jintianasia.azurewebsites.net/',
     defaultPrefix:"api/v1/"
   },
   authUrl: {
-    dev: 'http://localhost:54321/api/oauth/auth',
-    pro: 'http://localhost:54321/api/oauth/auth'
+    dev: 'https://jintianasia.azurewebsites.net/api/oauth/auth',
+    pro: 'https://jintianasia.azurewebsites.net/api/oauth/auth'
   },
   /**
    * @description 默认打开的首页的路由name值，默认为home

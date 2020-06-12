@@ -49,7 +49,8 @@ namespace DncZeus.Api
             services.AddCors(o =>
                 o.AddPolicy("CorsPolicy",
                     builder => builder
-                        .WithOrigins("http://localhost:9000")
+                        .WithOrigins("http://localhost:5000","https://jintianasia.azurewebsites.net/")
+                        .SetIsOriginAllowed(origin => true)
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         //.AllowAnyOrigin()
