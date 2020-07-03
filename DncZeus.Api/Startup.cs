@@ -109,6 +109,7 @@ namespace DncZeus.Api
             {
                 config.AddLog4Net();
             });
+            services.AddApplicationInsightsTelemetry();
         }
 
         /// <summary>
